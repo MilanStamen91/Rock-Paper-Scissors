@@ -1,0 +1,98 @@
+// scss
+// varibales
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'extends.scss';
+
+html, body {
+	margin: 0;
+	padding: 0;
+	color: $white-text;
+	font-family: $font-montserrat;
+
+	.container {
+		text-align: center;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: $bgcolor;
+
+		.dashboard {
+			height: 100px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.board {
+				width: 150px;
+				height: 50px;
+				border: 2px solid $white-text;
+				position: relative;
+				color: #fff;
+
+				.score {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 100%;
+					color: $white-text;
+					font-size: 1.5rem;
+					
+					.user_score:after {
+						content: ":";
+						padding: 0px 10px;
+					}
+				}
+
+				.user-name {
+					left: -20px;
+					@extend %player-name-holder;
+					@extend %small-font;
+				}
+
+				.comp-name {
+					right: -20px;
+					@extend %player-name-holder;
+					@extend %small-font;
+				}
+			}
+		}
+
+		.result {
+			display: block;
+			width: 100%;
+		}
+
+		.selection {
+			display: flex;	
+			width: 100%;
+			justify-content: space-evenly;
+		.item {
+				.circle {
+					border: 4px solid transparent;
+					border-radius: 50%;
+					img {	
+					width: 100px;			
+					}
+				}	
+			}
+		}
+	}
+}
+
+.green-glow {
+	border: 4px solid green !important;
+	box-shadow: 0 0 4px 2px green;
+}
+
+.red-glow {
+	border: 4px solid red !important;
+	box-shadow: 0 0 4px 2px red;
+}
+
+.gray-glow {
+	border: 4px solid gray !important;
+	box-shadow: 0 0 4px 2px gray;
+}
+

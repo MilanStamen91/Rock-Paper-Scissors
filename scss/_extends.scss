@@ -1,0 +1,15 @@
+%small-font {
+	font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+%player-name-holder {
+	position: absolute;
+	width: 50px;
+	height: 20px;
+	top: 17px;
+	background-color: $red-text;
+}

@@ -1,0 +1,119 @@
+html .container .dashboard .board .user-name, body .container .dashboard .board .user-name, html .container .dashboard .board .comp-name, body .container .dashboard .board .comp-name {
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+}
+
+html .container .dashboard .board .user-name, body .container .dashboard .board .user-name, html .container .dashboard .board .comp-name, body .container .dashboard .board .comp-name {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  top: 17px;
+  background-color: #e74c3c;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+html .container, body .container {
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #34495e;
+}
+html .container .dashboard, body .container .dashboard {
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .container .dashboard .board, body .container .dashboard .board {
+  width: 150px;
+  height: 50px;
+  border: 2px solid #fff;
+  position: relative;
+  color: #fff;
+}
+html .container .dashboard .board .score, body .container .dashboard .board .score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  color: #fff;
+  font-size: 1.5rem;
+}
+html .container .dashboard .board .score .user_score:after, body .container .dashboard .board .score .user_score:after {
+  content: ":";
+  padding: 0px 10px;
+}
+html .container .dashboard .board .user-name, body .container .dashboard .board .user-name {
+  left: -20px;
+}
+html .container .dashboard .board .comp-name, body .container .dashboard .board .comp-name {
+  right: -20px;
+}
+html .container .result, body .container .result {
+  display: block;
+  width: 100%;
+}
+html .container .selection, body .container .selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+html .container .selection .item .circle, body .container .selection .item .circle {
+  border: 4px solid transparent;
+  border-radius: 50%;
+}
+html .container .selection .item .circle img, body .container .selection .item .circle img {
+  width: 100px;
+}
+
+.green-glow {
+  border: 4px solid green !important;
+  -webkit-box-shadow: 0 0 4px 2px green;
+          box-shadow: 0 0 4px 2px green;
+}
+
+.red-glow {
+  border: 4px solid red !important;
+  -webkit-box-shadow: 0 0 4px 2px red;
+          box-shadow: 0 0 4px 2px red;
+}
+
+.gray-glow {
+  border: 4px solid gray !important;
+  -webkit-box-shadow: 0 0 4px 2px gray;
+          box-shadow: 0 0 4px 2px gray;
+}
+
+/*# sourceMappingURL=style.css.map */
